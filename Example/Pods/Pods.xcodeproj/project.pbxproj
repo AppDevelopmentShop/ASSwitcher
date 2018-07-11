@@ -15,8 +15,9 @@
 		6133A3FC0809AD4C64E9DF7F2D5DAFA0 /* Pods-ASSwitcher_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE466EFF415590F586AE97D25FEA959 /* Pods-ASSwitcher_Tests-dummy.m */; };
 		7218E803903BCF36D2B319F865D8EA8A /* Pods-ASSwitcher_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7356D834D62082FE7847020394ED7FF4 /* Pods-ASSwitcher_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7293602FCF63812F4A1F4902D95D3367 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B410E9C120F638EA00D90FE6 /* ASSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410E9C020F638EA00D90FE6 /* ASSwitcher.swift */; };
+		B410E9C320F6390A00D90FE6 /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410E9C220F6390A00D90FE6 /* BorderView.swift */; };
 		CE29ED3F2B879D0EC6DEC14378F4A5F9 /* ASSwitcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09914CABC37AC8F9D102E60449988DDC /* ASSwitcher-dummy.m */; };
-		E5642CDAAB0AFCE380B1AB4BD23547FD /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C596A311CFA1EE7A2A6D61ABD14DD5 /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,39 +40,40 @@
 /* Begin PBXFileReference section */
 		006E6FB686B2153B985DA688E85C845E /* Pods-ASSwitcher_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASSwitcher_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		09914CABC37AC8F9D102E60449988DDC /* ASSwitcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASSwitcher-dummy.m"; sourceTree = "<group>"; };
-		0BA24451236DE156BD5F4660E0014F43 /* ASSwitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ASSwitcher.framework; path = ASSwitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BA24451236DE156BD5F4660E0014F43 /* ASSwitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASSwitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B1B9432255FA130F2934EB27070131 /* Pods-ASSwitcher_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASSwitcher_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1538535F77A6CB755DBC7C78862C04AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		179C64226331D1ECEFF545C79F719E1F /* Pods-ASSwitcher_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ASSwitcher_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1BB4EBD07A978BAEF6DDD8A6116D6B73 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CFD24A8D289B97BDD3037A57CC7AC73 /* ASSwitcher.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ASSwitcher.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1CFD24A8D289B97BDD3037A57CC7AC73 /* ASSwitcher.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ASSwitcher.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1ECF4A19BE2A635AECA2F2EE2E4857F0 /* Pods-ASSwitcher_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ASSwitcher_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		24BFC703ADCDD84EE69321407CBB1454 /* Pods-ASSwitcher_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASSwitcher_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		2A7772276F02384BD323431C2BDE29E8 /* Pods_ASSwitcher_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ASSwitcher_Example.framework; path = "Pods-ASSwitcher_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A7772276F02384BD323431C2BDE29E8 /* Pods_ASSwitcher_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASSwitcher_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3481D9BD48801C05F6BB21C0A9890DA7 /* Pods-ASSwitcher_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASSwitcher_Tests-resources.sh"; sourceTree = "<group>"; };
 		3D5C0F2270BF3C4999C3D2FC570AED44 /* ASSwitcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASSwitcher.xcconfig; sourceTree = "<group>"; };
 		3EA04FE03EB66B1B9021FAE31B19641F /* Pods-ASSwitcher_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ASSwitcher_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		438BC77BA1C9423314E66D2A75A9A719 /* Pods-ASSwitcher_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ASSwitcher_Tests.modulemap"; sourceTree = "<group>"; };
 		46572FC8885CC67C390E149C5A591CF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C47B9BE65983E88F00EF415CE5CC512 /* Pods-ASSwitcher_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASSwitcher_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		54011C7EE31944FECAFB174FD28C6E45 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		54011C7EE31944FECAFB174FD28C6E45 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5C01F08661DDDDBABCE7DD8EBF4F24C2 /* Pods-ASSwitcher_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ASSwitcher_Example-dummy.m"; sourceTree = "<group>"; };
-		65D421DF095DEFF3506E1BCFCA35BDB6 /* Pods_ASSwitcher_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ASSwitcher_Tests.framework; path = "Pods-ASSwitcher_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D421DF095DEFF3506E1BCFCA35BDB6 /* Pods_ASSwitcher_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASSwitcher_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6EE466EFF415590F586AE97D25FEA959 /* Pods-ASSwitcher_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ASSwitcher_Tests-dummy.m"; sourceTree = "<group>"; };
 		7356D834D62082FE7847020394ED7FF4 /* Pods-ASSwitcher_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ASSwitcher_Example-umbrella.h"; sourceTree = "<group>"; };
 		937496A2D10F4F40C1B1CF08879DD5B8 /* Pods-ASSwitcher_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ASSwitcher_Example.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA311836645E35A7D71E24ADAE45740C /* ASSwitcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASSwitcher-prefix.pch"; sourceTree = "<group>"; };
 		AB88C3EE8E5F6D7E746BEE968CA10A8E /* ASSwitcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ASSwitcher.modulemap; sourceTree = "<group>"; };
+		B410E9C020F638EA00D90FE6 /* ASSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASSwitcher.swift; sourceTree = "<group>"; };
+		B410E9C220F6390A00D90FE6 /* BorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
 		C2F4C5E60F6A19B1FBF14D3DA15E9820 /* Pods-ASSwitcher_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASSwitcher_Example-resources.sh"; sourceTree = "<group>"; };
 		C3281C1E6296005F689DF4F6337DC1CC /* Pods-ASSwitcher_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ASSwitcher_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C9DBD4AA0E9B65102B85BB25EAFE9F19 /* Pods-ASSwitcher_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASSwitcher_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D6D5C07078E225A3C9B73CF905F9E887 /* ASSwitcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASSwitcher-umbrella.h"; sourceTree = "<group>"; };
 		E232076729C1D2783422F9178C1E2390 /* Pods-ASSwitcher_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ASSwitcher_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F3DC1820A00BE7B41FBFA40B9DEAC2A7 /* Pods-ASSwitcher_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASSwitcher_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F4C596A311CFA1EE7A2A6D61ABD14DD5 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ASSwitcher/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		F69DA5CAF6A2241191918AF46B0AC8B2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F69DA5CAF6A2241191918AF46B0AC8B2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,7 @@
 		10CAA8024AC8033EC4761250DA799AEC /* ASSwitcher */ = {
 			isa = PBXGroup;
 			children = (
-				F4C596A311CFA1EE7A2A6D61ABD14DD5 /* ReplaceMe.swift */,
+				B410E9BF20F638AC00D90FE6 /* Classes */,
 				FC2325D7B8837A89EB7F5237D94C43D2 /* Pod */,
 				4F1B824FDB24BFDF1B5DDDC41E86BF9A /* Support Files */,
 			);
@@ -190,6 +192,15 @@
 				10CAA8024AC8033EC4761250DA799AEC /* ASSwitcher */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B410E9BF20F638AC00D90FE6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B410E9C020F638EA00D90FE6 /* ASSwitcher.swift */,
+				B410E9C220F6390A00D90FE6 /* BorderView.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -318,6 +329,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					196CCFA27A5424BBCE9ACEEDBE16DDEA = {
+						LastSwiftMigration = 0930;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -359,8 +375,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B410E9C120F638EA00D90FE6 /* ASSwitcher.swift in Sources */,
+				B410E9C320F6390A00D90FE6 /* BorderView.swift in Sources */,
 				CE29ED3F2B879D0EC6DEC14378F4A5F9 /* ASSwitcher-dummy.m in Sources */,
-				E5642CDAAB0AFCE380B1AB4BD23547FD /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +415,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ASSwitcher_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ASSwitcher_Tests/Pods-ASSwitcher_Tests.modulemap";
@@ -419,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D5C0F2270BF3C4999C3D2FC570AED44 /* ASSwitcher.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -431,7 +449,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ASSwitcher/ASSwitcher-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ASSwitcher/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ASSwitcher/ASSwitcher.modulemap";
 				PRODUCT_MODULE_NAME = ASSwitcher;
@@ -464,7 +482,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ASSwitcher_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ASSwitcher_Example/Pods-ASSwitcher_Example.modulemap";
@@ -499,7 +517,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ASSwitcher_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ASSwitcher_Example/Pods-ASSwitcher_Example.modulemap";
@@ -522,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D5C0F2270BF3C4999C3D2FC570AED44 /* ASSwitcher.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -534,7 +553,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ASSwitcher/ASSwitcher-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ASSwitcher/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ASSwitcher/ASSwitcher.modulemap";
 				PRODUCT_MODULE_NAME = ASSwitcher;
@@ -667,6 +686,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -687,7 +707,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ASSwitcher_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ASSwitcher_Tests/Pods-ASSwitcher_Tests.modulemap";
