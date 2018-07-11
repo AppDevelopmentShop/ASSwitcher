@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ASSwitcher_Example' do
+  pod 'ASSwitcher', :path => '../'
+
+  target 'ASSwitcher_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
