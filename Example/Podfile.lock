@@ -1,0 +1,16 @@
+PODS:
+  - ASSwitcher (0.1.0)
+
+DEPENDENCIES:
+  - ASSwitcher (from `../`)
+
+EXTERNAL SOURCES:
+  ASSwitcher:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ASSwitcher: 6b44ba5d2d0513eda8d68d8862ab232c59a85ea3
+
+PODFILE CHECKSUM: 912ba53845c94cfd346eadd2c9635af0447f388c
+
+COCOAPODS: 1.5.3

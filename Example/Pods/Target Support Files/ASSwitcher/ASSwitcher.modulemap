@@ -1,0 +1,6 @@
+framework module ASSwitcher {
+  umbrella header "ASSwitcher-umbrella.h"
+
+  export *
+  module * { export * }
+}
