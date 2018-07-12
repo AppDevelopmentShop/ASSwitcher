@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.name             = 'ASSwitcher'
-  s.version          = '0.1.1'
+  s.version          = '0.1.0'
   s.swift_version    = '4.0'
   s.summary          = 'Now easy to make custom switcher with images and borders'
 
