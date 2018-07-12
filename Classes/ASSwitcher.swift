@@ -105,6 +105,16 @@ public class ASSwitcher: UIView {
         onCenterPosition = self.bounds.width - self.bounds.height
         self.backgroundColor = .clear
         
+        let singleTap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.switcherButtonTouch(_:)))
+        let swipeRight: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.getSwipeAction(_:)))
+        let swipeLeft: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.getSwipeAction(_:)))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        singleTap.numberOfTapsRequired = 1
+        self.addGestureRecognizer(singleTap)
+        self.addGestureRecognizer(swipeRight)
+        self.addGestureRecognizer(swipeLeft)
+        
         initBorderView()
         initBackView()
         initButtonView()
@@ -123,6 +133,7 @@ public class ASSwitcher: UIView {
         borderView = BorderView()
         self.addSubview(borderView!)
         borderView!.translatesAutoresizingMaskIntoConstraints = false
+        borderView!.isUserInteractionEnabled = false
         
         addConstraintsStandart(item: borderView!, toItem: self, constantTrailing: 0, constantLeading: 0, constantTop: 0, constantBottom: 0)
     }
@@ -131,6 +142,7 @@ public class ASSwitcher: UIView {
         backVew = UIView()
         self.addSubview(backVew)
         backVew.translatesAutoresizingMaskIntoConstraints = false
+        backVew.isUserInteractionEnabled = false
         
         backVew.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         backVew.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 1).isActive = true
@@ -141,6 +153,7 @@ public class ASSwitcher: UIView {
         buttonView = UIView()
         backVew.addSubview(buttonView)
         buttonView.translatesAutoresizingMaskIntoConstraints = false
+        buttonView.isUserInteractionEnabled = false
         
         addConstraintsStandart(item: buttonView, toItem: backVew, constantTrailing: 0, constantLeading: 0, constantTop: 0, constantBottom: 0)
     }
@@ -152,6 +165,7 @@ public class ASSwitcher: UIView {
             v.removeFromSuperview();
         }
         buttonView.addSubview(background)
+        background.isUserInteractionEnabled = false
         
         addConstraintsStandart(item: background, toItem: buttonView, constantTrailing: 0, constantLeading: 0, constantTop: 0, constantBottom: 0)
     }
@@ -160,6 +174,7 @@ public class ASSwitcher: UIView {
         imageContainerView = UIView()
         self.insertSubview(imageContainerView, at: 0)
         imageContainerView.translatesAutoresizingMaskIntoConstraints = false
+        imageContainerView.isUserInteractionEnabled = false
         
         addConstraintsStandart(item: imageContainerView, toItem: self, constantTrailing: 0, constantLeading: 0, constantTop: 0, constantBottom: 0)
     }
@@ -197,16 +212,6 @@ public class ASSwitcher: UIView {
         self.button.backgroundColor = .clear
         self.button.contentMode = .center
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.isUserInteractionEnabled = true
-        let singleTap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.switcherButtonTouch(_:)))
-        let swipeRight: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.getSwipeAction(_:)))
-        let swipeLeft: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.getSwipeAction(_:)))
-        swipeRight.direction = UISwipeGestureRecognizerDirection.right
-        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
-        singleTap.numberOfTapsRequired = 1
-        button.addGestureRecognizer(singleTap)
-        button.addGestureRecognizer(swipeRight)
-        button.addGestureRecognizer(swipeLeft)
         
         leftConstraint = button.leftAnchor.constraint(equalTo: self.leftAnchor)
         leftConstraint.isActive = true
