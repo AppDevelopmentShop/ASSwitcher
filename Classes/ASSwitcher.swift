@@ -228,7 +228,7 @@ public class ASSwitcher: UIView {
         toItem.addConstraint(NSLayoutConstraint(item: item, attribute: .bottom, relatedBy: .equal, toItem: toItem, attribute: .bottom, multiplier: 1, constant: constantBottom));
     }
     
-    private func doSwipe() {
+    public func doSwipe() {
         on = !on
         animationSwitcherButton()
         delegate?.switcherDidChangeValue(switcher: self, value: on)
